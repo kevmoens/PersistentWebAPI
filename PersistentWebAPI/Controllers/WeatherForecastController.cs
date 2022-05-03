@@ -35,7 +35,7 @@ namespace PersistentWebAPI.Controllers
             })
             .ToArray();
         }
-        public int GetNextTemp()
+        private int GetNextTemp()
         {
             var assembly = _unloadable.Context.GetAssembly("RoslynCompileSample");
             Type? twriter = assembly.GetType("RoslynCompileSample.LocalTemp");
